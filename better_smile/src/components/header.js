@@ -6,7 +6,10 @@ export default class Header extends Component {
         return(
             <>
                 <header>
-                    <h1>Better Smile</h1>
+                    <section className="header">
+                        <img className="header_logo" src=".img/logo.png" alt="Better Smile logo"/>
+                        <h1>Better Smile</h1>
+                    </section>
                 </header>
             </>
         )
