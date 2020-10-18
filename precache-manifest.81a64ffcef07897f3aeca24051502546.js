@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a8d64cc50d2a97274075fdd86f1e4690",
+    "revision": "6d9f9467ea093320a1299ec094ef37fa",
     "url": "/BetterSmile/index.html"
   },
   {
-    "revision": "91f18b7dededd06c0166",
-    "url": "/BetterSmile/static/css/main.7ec6035e.chunk.css"
+    "revision": "da5d486dc622106ae3df",
+    "url": "/BetterSmile/static/css/main.d2888bed.chunk.css"
   },
   {
     "revision": "bf2677345dc54591d5a7",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BetterSmile/static/js/2.29f9ec65.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "91f18b7dededd06c0166",
-    "url": "/BetterSmile/static/js/main.f1978f74.chunk.js"
+    "revision": "da5d486dc622106ae3df",
+    "url": "/BetterSmile/static/js/main.37811742.chunk.js"
   },
   {
     "revision": "ace819e6f1af0d95a4aa",
