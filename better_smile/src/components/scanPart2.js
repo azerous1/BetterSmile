@@ -13,7 +13,7 @@ export default class ScanPartTwo extends Component {
                             title = "livevideo"
                             width="700"
                             height="393.75"
-                            src="https://www.youtube.com/embed/W_c40WUkm4E"
+                            src="https://www.youtube.com/embed/Cx9Dj3uG-yM"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen
@@ -33,7 +33,7 @@ export default class ScanPartTwo extends Component {
                 </div>
 
                 <div>
-                    <button onClick={this.props.onClick} type="button" className="btn btn-info mt-5 mb-5">
+                    <button onClick={this.props.onClick}  type="button" className="btn btn-info mt-5 mb-5">
                         Next
                     </button>
                 </div>

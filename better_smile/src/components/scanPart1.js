@@ -13,7 +13,7 @@ export default class ScanPartOne extends Component {
                             title = "livevideo"
                             width="700"
                             height="393.75"
-                            src="https://www.youtube.com/embed/W_c40WUkm4E"
+                            src="https://www.youtube.com/embed/Cx9Dj3uG-yM"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen

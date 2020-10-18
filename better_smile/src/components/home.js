@@ -31,7 +31,7 @@ export default class Home extends Component {
             showCamera: false,
             showPartOne: false,
             showPartTwo: false,
-            ShowPartThree: false,
+            showPartThree: false,
             showScan: true,
             showReport: false,
             buttonDisabled: true
@@ -47,9 +47,6 @@ export default class Home extends Component {
     }
 
     componentUnMount() {
-        this.setState(
-            {buttonDisabled: true}
-        )
     }
 
     handleScanClick = () => {
@@ -97,7 +94,7 @@ export default class Home extends Component {
             {
                 showPhone: false,
                 showPartTwo: false,
-                ShowPartThree: true,
+                showPartThree: true,
                 showScan: false,
                 showReport: false,
                 buttonDisabled: true
@@ -191,7 +188,7 @@ export default class Home extends Component {
             partTwo = <ScanPartTwo onClick={this.handleTwoToThreeClick} disabled={this.state.buttonDisabled}/>
         }
 
-        if (this.state.ShowPartThree) {
+        if (this.state.showPartThree) {
             partThree = <ScanPartThree onClick={this.handleReportClick} disabled={this.state.buttonDisabled}/>
         }
 

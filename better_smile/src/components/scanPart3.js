@@ -13,7 +13,7 @@ export default class ScanPartThree extends Component {
                         title = "livevideo"
                         width="700"
                         height="393.75"
-                        src="https://www.youtube.com/embed/W_c40WUkm4E"
+                        src="https://www.youtube.com/embed/Cx9Dj3uG-yM"
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
@@ -23,14 +23,14 @@ export default class ScanPartThree extends Component {
                     <div className="col-4 mt-3">
                         <img className="checkimg mt-2" src={tongue_img} alt="tongue"/>
 
-                                    <section className="checkpoint3 mt-3">
-                                        <h2>Keep your mouth wide open!</h2>
-                                    </section>
+                            <section className="checkpoint3 mt-3">
+                                <h2>Keep your mouth wide open!</h2>
+                            </section>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <button onClick={this.props.onClick} type="button" disabled={this.props.disabled}  className="btn btn-info mt-5 mb-5">
+                    <button onClick={this.props.onClick} type="button" className="btn btn-info mt-5 mb-5">
                         Check Results
                     </button>
                 </div>
