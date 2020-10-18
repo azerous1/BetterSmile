@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/BetterSmile/precache-manifest.81a64ffcef07897f3aeca24051502546.js"
+  "/BetterSmile/precache-manifest.3b7ee9920ec19ea4810561a9fbe4a8d8.js"
 );
 
 self.addEventListener('message', (event) => {

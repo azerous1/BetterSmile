@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/BetterSmile/static/css/main.d2888bed.chunk.css",
-    "main.js": "/BetterSmile/static/js/main.37811742.chunk.js",
-    "main.js.map": "/BetterSmile/static/js/main.37811742.chunk.js.map",
+    "main.js": "/BetterSmile/static/js/main.74ca4951.chunk.js",
+    "main.js.map": "/BetterSmile/static/js/main.74ca4951.chunk.js.map",
     "runtime-main.js": "/BetterSmile/static/js/runtime-main.60eb748a.js",
     "runtime-main.js.map": "/BetterSmile/static/js/runtime-main.60eb748a.js.map",
     "static/js/2.29f9ec65.chunk.js": "/BetterSmile/static/js/2.29f9ec65.chunk.js",
     "static/js/2.29f9ec65.chunk.js.map": "/BetterSmile/static/js/2.29f9ec65.chunk.js.map",
     "index.html": "/BetterSmile/index.html",
-    "precache-manifest.81a64ffcef07897f3aeca24051502546.js": "/BetterSmile/precache-manifest.81a64ffcef07897f3aeca24051502546.js",
+    "precache-manifest.3b7ee9920ec19ea4810561a9fbe4a8d8.js": "/BetterSmile/precache-manifest.3b7ee9920ec19ea4810561a9fbe4a8d8.js",
     "service-worker.js": "/BetterSmile/service-worker.js",
     "static/css/main.d2888bed.chunk.css.map": "/BetterSmile/static/css/main.d2888bed.chunk.css.map",
     "static/js/2.29f9ec65.chunk.js.LICENSE.txt": "/BetterSmile/static/js/2.29f9ec65.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.60eb748a.js",
     "static/js/2.29f9ec65.chunk.js",
     "static/css/main.d2888bed.chunk.css",
-    "static/js/main.37811742.chunk.js"
+    "static/js/main.74ca4951.chunk.js"
   ]
 }
