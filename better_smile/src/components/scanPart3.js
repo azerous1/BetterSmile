@@ -13,7 +13,7 @@ export default class ScanPartThree extends Component {
                         title = "livevideo"
                         width="700"
                         height="393.75"
-                        src="https://www.youtube.com/embed/Cx9Dj3uG-yM"
+                        src="https://www.youtube.com/embed/x3d9iBnN72g"
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
@@ -25,6 +25,7 @@ export default class ScanPartThree extends Component {
 
                             <section className="checkpoint3 mt-3">
                                 <h2>Keep your mouth wide open!</h2>
+                                <p className="mt-2">Please wait until the text turns green!</p>
                             </section>
                         </div>
                     </div>

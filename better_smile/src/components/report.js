@@ -4,6 +4,7 @@ export default class Report extends Component {
     render() {
         return(
             <div>
+                <h1 className="mt-5 mb-2 ml-5">Your Report</h1>
                 <section className="report_section">
                     <h1> Cavity </h1>
                     <h2> Status: <strong className = "text-danger">Need Attention</strong></h2> 

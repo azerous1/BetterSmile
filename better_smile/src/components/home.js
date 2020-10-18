@@ -24,7 +24,6 @@ export default class Home extends Component {
         this.handleGoBackClick = this.handleGoBackClick.bind(this);
         this.scrollToSection = this.scrollToScanSection.bind(this);
         this.scrollToPhoneSection = this.scrollToPhoneSection.bind(this);
-        this.handleAbout = this.handleAbout.bind(this)
         this.state = {
             showAbout: false,
             showPhone: false,
@@ -44,9 +43,6 @@ export default class Home extends Component {
                 {buttonDisabled: false}
             )
         }, 5000);
-    }
-
-    componentUnMount() {
     }
 
     handleScanClick = () => {
@@ -132,6 +128,9 @@ export default class Home extends Component {
           delay: 0,
           smooth: "easeInOutQuart",
         });
+        this.setState(
+            {buttonDisabled: true}
+        )
       };
 
     scrollToScanSection = () => {
@@ -141,14 +140,6 @@ export default class Home extends Component {
           smooth: "easeInOutQuart",
         });
       };
-
-      handleAbout = () => {
-          this.setState({showAbout : true,
-        showCamera: false,
-        showReport: false,
-        showScan: false,
-        showPhone: false})
-      }
 
     render() {
         let button;
@@ -201,15 +192,10 @@ export default class Home extends Component {
                             <div class="text-box">
                                 <h1>Affordable Healthy Smiles</h1>
                                 <h4>Make dental care accessible to everyone</h4>
-
-                        
                                 {button}
-
                             </div>
                          <div>
-
-                             {phone}
-
+                         {phone}
                          <div id="reportPlaceHolder" name ="reportPlaceHolder"></div>
                          {partOne}
                          {partTwo}
@@ -218,8 +204,7 @@ export default class Home extends Component {
                         {report}
                         
                     </main>
-                <Footer about={this.handleAbout}/>
-                
+                <Footer/>
             </>
         )
     }
