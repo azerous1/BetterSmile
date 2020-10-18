@@ -1,3 +1,7 @@
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -48,6 +52,33 @@
 }
 
 .header_logo {
-  width: 175px;
-  height: 60px;
+  width: 250px;
+  height: 80px;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+/* Main Content */
+.blank {
+  width: 100%;
+  height: 100px;
+}
+
+.background_img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* report */
+.report_section{
+  margin: .5rem 0;
+  padding: .5rem;
+  border: 30px solid #6DDDD0;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.report_section h1{
+  color: #364F6b
 }

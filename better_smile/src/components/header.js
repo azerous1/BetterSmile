@@ -1,4 +1,5 @@
-import React, {Component, Fragment } from 'react';
+import React, {Component} from 'react';
+import logo from "./img/logo.png"
 
 export default class Header extends Component {
 
@@ -6,13 +7,13 @@ export default class Header extends Component {
         return(
             <>
                 <header>
-                    <section className="header">
-                        <img className="header_logo" src=".img/logo.png" alt="Better Smile logo"/>
-                        <h1>Better Smile</h1>
-                    </section>
+                    <div className='text-center'>
+                        <section className="header">
+                            <img className="header_logo" src={logo} alt="Better Smile logo"/>
+                        </section>
+                    </div>
                 </header>
-            </>
+            </> 
         )
     }
-
 }
