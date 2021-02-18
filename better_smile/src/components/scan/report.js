@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Report extends Component {
-    render() {
+export const Report = (props) => {
         return(
             <div>
                 <h1 className="mt-5 mb-2 ml-5">Your Report</h1>
@@ -103,9 +102,9 @@ export default class Report extends Component {
                     </h3>
                 </section> 
                 <div className="text-center">
-                    <button onClick={this.props.onClick} type="button" className="btn btn-info mt-5 mb-5">Save you report</button>
+                    <button onClick={props.onClickCallback} type="button" className="btn btn-info mt-5 mb-5">Save you report</button>
                 </div>
             </div>
         )
-    }
+
 }

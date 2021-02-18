@@ -1,20 +1,18 @@
 import React, {Component} from 'react';
 import Header from './header';
 import Footer from './footer';
-import Smile_img from './img/smile.png'
-import Report from './report';
-import ScanButton from "./scanButton"
-import ShowReportButton from "./showReportButton"
-import { scroller } from "react-scroll";
-import GetPhone from './GetPhone';
-import About from './about'
-import ScanPartOne from './scanPart1';
-import ScanPartTwo from './scanPart2';
-import ScanPartThree from './scanPart3';
+import Smile_img from '../../img/smile.png'
+import {Report} from '../scan/report';
+import ScanButton from "../scan/scanButton"
+import {scroller} from "react-scroll";
+import {GetPhone} from '../scan/GetPhone';
+import {ScanPartOne} from '../scan/scanPart1';
+import {ScanPartTwo} from '../scan/scanPart2';
+import {ScanPartThree} from '../scan/scanPart3';
 
 export default class Home extends Component {
     constructor(props) {
-        super(props) 
+        super(props)
         this.myref = React.createRef()
         this.handleScanClick = this.handleScanClick.bind(this);
         this.handleReadyToScanClick = this.handleReadyToScanClick.bind(this);
@@ -99,7 +97,6 @@ export default class Home extends Component {
         this.scrollToSection()
     }
 
-
     handleReportClick = () => {
         this.setState(
             {
@@ -124,86 +121,52 @@ export default class Home extends Component {
 
     scrollToPhoneSection = () => {
         scroller.scrollTo("reportPlaceHolder", {
-          duration: 800,
-          delay: 0,
-          smooth: "easeInOutQuart",
+            duration: 800,
+            delay: 0,
+            smooth: "easeInOutQuart",
         });
         this.setState(
             {buttonDisabled: true}
         )
-      };
+    };
 
     scrollToScanSection = () => {
         scroller.scrollTo("reportPlaceHolder", {
-          duration: 800,
-          delay: 0,
-          smooth: "easeInOutQuart",
+            duration: 800,
+            delay: 0,
+            smooth: "easeInOutQuart",
         });
-      };
+    };
 
     render() {
-        let button;
-        let partOne;
-        let partTwo;
-        let partThree;
-        let report;
-        let phone;
-        let about;
-        if (this.state.showScan) {
-            button = 
-                <div>
-                    <ScanButton onClick={this.handleScanClick} onMount={this.scrollToScanSection}/>
-                </div>
-        }
-
-        if (this.state.showAbout) {
-            about = 
-            <div>
-                <About></About>
-            </div>
-        }
-
-        if (this.state.showReport) {
-            report = <Report onClick={this.handleGoBackClick}/>
-        }
-
-        if (this.state.showPhone) {
-            phone = <GetPhone className="phno-entry" onClick={this.handleReadyToScanClick}/>
-        }
-
-        if (this.state.showPartOne) {
-            partOne = <ScanPartOne onClick={this.handleOneToTwoClick} disabled={this.state.buttonDisabled}/>
-        }
-
-        if (this.state.showPartTwo) {
-            partTwo = <ScanPartTwo onClick={this.handleTwoToThreeClick} disabled={this.state.buttonDisabled}/>
-        }
-
-        if (this.state.showPartThree) {
-            partThree = <ScanPartThree onClick={this.handleReportClick} disabled={this.state.buttonDisabled}/>
-        }
-
-        return(
-            <>  
+        return (
+            <>
                 <Header/>
-                    <main>
-                        <section className="blank"></section>
-                            <img className="background_img" src={Smile_img} alt="People smiling"/>
-                            <div class="text-box">
-                                <h1>Affordable Healthy Smiles</h1>
-                                <h4>Make dental care accessible to everyone</h4>
-                                {button}
-                            </div>
-                         <div>
-                         {phone}
-                         <div id="reportPlaceHolder" name ="reportPlaceHolder"></div>
-                         {partOne}
-                         {partTwo}
-                         {partThree}
-                         </div>
-                        {report}
-                        
-                    </main>
+                <main>
+                    <section className="blank"></section>
+                    <img className="background_img" src={Smile_img} alt="People smiling"/>
+                    <div class="text-box">
+                        <h1>Affordable Healthy Smiles</h1>
+                        <h4>Make dental care accessible to everyone</h4>
+                        {this.state.showScan &&
+                        <div>
+                            <ScanButton onClick={this.handleScanClick} onMount={this.scrollToScanSection}/>
+                        </div>
+                        }
+                    </div>
+                    <div>
+                        {this.state.showPhone &&
+                        <GetPhone className="phno-entry" onClickCallback={this.handleReadyToScanClick}/>}
+                        <div id="reportPlaceHolder" name="reportPlaceHolder"></div>
+                        {this.state.showPartOne &&
+                        <ScanPartOne onClickCallback={this.handleOneToTwoClick}/>}
+                        {this.state.showPartTwo &&
+                        <ScanPartTwo onClickCallback={this.handleTwoToThreeClick}/>}
+                        {this.state.showPartThree &&
+                        <ScanPartThree onClickCallback={this.handleReportClick}/>}
+                    </div>
+                    {this.state.showReport && <Report onClickCallback={this.handleGoBackClick}/>}
+                </main>
                 <Footer/>
             </>
         )

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './css/App.css';
 import {Route, Switch, Redirect } from 'react-router-dom';
-import Home from "./components/home"
-import About from "./components/about"
+import Home from "./components/home/home"
+import About from "./components/about/about"
 
 class App extends Component {
   state = {

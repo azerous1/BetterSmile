@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 export default class showReportButton extends Component {
 
-
     render() {
         return(
             <div className="text-center">

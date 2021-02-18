@@ -1,9 +1,7 @@
-import React, {Component} from 'react';
-import tongue_img from './img/tongue.png'
+import React from 'react';
+import tongue_img from '../../img/tongue.png'
 
-export default class ScanPartOne extends Component {
-
-    render() {
+export const ScanPartOne = (props) => {
         return(
             <div className="text-center mt-5">
                 <div className="container">
@@ -31,11 +29,10 @@ export default class ScanPartOne extends Component {
                         </div>
                     </div>
                 <div>
-                    <button onClick={this.props.onClick} type="button" className="btn btn-info mt-5 mb-5">
+                    <button onClick={props.onClickCallback} type="button" className="btn btn-info mt-5 mb-5">
                         Next
                     </button>
                 </div>
             </div> 
         )
-    }
 }
